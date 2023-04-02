@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animation CSS</title>
+       <style>
+           .del
+           {
+               background-color: blue;
+               color: white;
+               height: 100px;
+               width: 100px;
+               margin: 3px;
+               animation: myname 4s;
+            }
+           @keyframes myname 
+           {
+               from{background: green;}
+               to{background: red;}
+               
+           }
+           
+           
+           .mumb
+           {
+               background-color: #FF4000;
+               height: 100px;
+               width: 100px;
+               margin: 3px;
+               position: relative;
+               animation: myanimation 4s; 
+               
+           }
+           @keyframes myanimation 
+           {
+               0%{background: blueviolet;left: 0px;top: 0px;}
+               25%{background: rgb(12, 175, 110);left: 400px;top: 0px;}
+               50%{background: rgb(233, 223, 33);left: 400px;top: 400px;}
+               75%{background: #2612d7;left: 0px;top: 400px;}
+               100%{background: #FF4000;left: 0px;top: 0px;}
+           }
+           
+           .bang
+           {
+               background-color: #3cf45b;
+               height: 100px;
+               width: auto;
+               margin: 3px;
+           }
+           .cap
+           {
+               background-color: #ffffff;
+               color: black;
+           }
+       </style>
+    </head>
+    <body>
+        <div class="del">Delhi is <span class="cap">Capital</span></div>
+        <div class="mumb">Mumbai</div>
+        <div class="bang">Bangluru</div>
+
+       
+    </body>
+</html>
